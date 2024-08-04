@@ -35,15 +35,17 @@ public  class MyArray {
                 }
             }
 
-            // In-built sort method for sorting
-            // Sort the array
-            //Arrays.sort(myArray);
+            /* 
+            In-built sort method for sorting
+            - Sort the array
+            Arrays.sort(myArray);
 
-            // The smallest element is the first element in the sorted array
-            //int min = myArray[0];
+            - The smallest element is the first element in the sorted array
+            int min = myArray[0];
 
-            // The largest element is the last element in the sorted array
-            //int max = myArray[myArray.length - 1];
+            - The largest element is the last element in the sorted array
+            int max = myArray[myArray.length - 1];
+            */
             
             System.out.println("Smallest element: " + min);
             System.out.println("Biggest element: " + max);
