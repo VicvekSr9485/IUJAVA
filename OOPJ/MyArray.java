@@ -23,8 +23,8 @@ public  class MyArray {
             }
 
             //Initializing the min and max to the first element of the array
-            int min = myArray[0];
-            int max = myArray[0];
+            int min = findMin(myArray);
+            int max = findMax(myArray);
 
             for (int i = 1; i < n; i++) {
                 if (myArray[i] > max) {
@@ -50,5 +50,25 @@ public  class MyArray {
             System.out.println("Smallest element: " + min);
             System.out.println("Biggest element: " + max);
         }
+    }
+
+    public static int findMin(int[] array) {
+        int min = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if ( array[i] < min) {
+                min = i;
+            }
+        }
+        return min;
+    }
+
+    public static int findMax(int[] array) {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
     }
 }
